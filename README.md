@@ -1,2 +1,0 @@
-# Ghosn
-Frontend development
