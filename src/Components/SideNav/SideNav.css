@@ -1,0 +1,30 @@
+.side-nav-container{
+    width:20%;
+    /* min-width: 250px; */
+    height: 100vh;
+    padding: 32px;
+    /* position: relative;
+    top:0;
+    left:0; */
+    background-color: #008D3E;
+}
+.side-nav-container li{
+    list-style-type: none;
+    margin-bottom: 44px;
+}
+.side-nav-container li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.side-nav-container li a.active{
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+@media (min-width: 567px){
+    .side-nav-container{
+        width:20%;
+        min-width: 250px;
+    }
+}

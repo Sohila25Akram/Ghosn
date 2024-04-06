@@ -1,4 +1,4 @@
-import { SliderPotComponent} from '../Components/SliderComponent/SliderComponent';
+import { SliderPanel, SliderPotComponent} from '../Components/SliderComponent/SliderComponent';
 import { SliderMultiplePhotos } from '../Components/SliderComponent/SliderComponent';
 import { Quantity } from '../Components/ProductSmallDetails/ProductSmallDetails';
 import { Rating } from '../Components/ProductSmallDetails/ProductSmallDetails';
@@ -64,6 +64,7 @@ export function Details (){
                     </div>
                 </div>
             </div>
+            {/* <SliderPanel /> */}
         </>
     )
 }
