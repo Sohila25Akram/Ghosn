@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Ghosn/static/css/main.54425a83.css",
+    "main.js": "/Ghosn/static/js/main.bebf0043.js",
+    "static/js/453.a65cf70a.chunk.js": "/Ghosn/static/js/453.a65cf70a.chunk.js",
+    "static/media/articletwo.png": "/Ghosn/static/media/articletwo.72f99e2b24fa593a7640.png",
+    "static/media/remixicon.svg?t=1708865856766": "/Ghosn/static/media/remixicon.7735fab8dbf8ff78afe9.svg",
+    "static/media/png": "/Ghosn/static/media/451c6ba5630c99ea1fcf92c438daf134.91fa96a984847ac66996.png",
+    "static/media/articleone.png": "/Ghosn/static/media/articleone.8992f46d43e0dec6cb91.png",
+    "static/media/articlethree.png": "/Ghosn/static/media/articlethree.5913e46ad697ae18971c.png",
+    "static/media/image 12.png": "/Ghosn/static/media/image 12.4c67ac3f2787d219ab7f.png",
+    "static/media/products.png": "/Ghosn/static/media/products.226b6ba32503911a77ac.png",
+    "static/media/remixicon.eot?t=1708865856766": "/Ghosn/static/media/remixicon.8542c1bb279bcd77063a.eot",
+    "static/media/remixicon.ttf?t=1708865856766": "/Ghosn/static/media/remixicon.4c942de19d980993f612.ttf",
+    "static/media/appthree.png": "/Ghosn/static/media/appthree.c372ea0936894a212b80.png",
+    "static/media/Frame 73.png": "/Ghosn/static/media/Frame 73.537a11de4f3f8629e668.png",
+    "static/media/categorythree.jpeg": "/Ghosn/static/media/categorythree.67ad00d22b4670574607.jpeg",
+    "static/media/remixicon.woff?t=1708865856766": "/Ghosn/static/media/remixicon.28ceff39ee3e17dc99db.woff",
+    "static/media/apptwo.png": "/Ghosn/static/media/apptwo.57bc8c5f1d15d735c61f.png",
+    "static/media/remixicon.woff2?t=1708865856766": "/Ghosn/static/media/remixicon.39f4def56d0e8712909a.woff2",
+    "static/media/categoryone.jpeg": "/Ghosn/static/media/categoryone.fc2eee5eb2955364010b.jpeg",
+    "static/media/categorytwo.jpeg": "/Ghosn/static/media/categorytwo.e34c60b7dafae564a52a.jpeg",
+    "static/media/jpeg": "/Ghosn/static/media/6894f95b73dd52943a365198ba6bae84.7e329384fbc48b0d54d5.jpeg",
+    "static/media/appfour.png": "/Ghosn/static/media/appfour.deda79dc02521eccbf00.png",
+    "static/media/image 13.png": "/Ghosn/static/media/image 13.5a759816f9e62ff72408.png",
+    "static/media/image 14.png": "/Ghosn/static/media/image 14.1d7f28d49bfd957a4cb2.png",
+    "static/media/googleplay.png": "/Ghosn/static/media/googleplay.c6c3c61a1e9fbbc13133.png",
+    "static/media/appone.png": "/Ghosn/static/media/appone.bc1f73fd98c445f75307.png",
+    "index.html": "/Ghosn/index.html",
+    "main.54425a83.css.map": "/Ghosn/static/css/main.54425a83.css.map",
+    "main.bebf0043.js.map": "/Ghosn/static/js/main.bebf0043.js.map",
+    "453.a65cf70a.chunk.js.map": "/Ghosn/static/js/453.a65cf70a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54425a83.css",
+    "static/js/main.bebf0043.js"
+  ]
+}
