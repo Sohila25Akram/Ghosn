@@ -1,0 +1,30 @@
+.singlearticle .art-right ,.singlearticle .art-left{
+    width: 45%;
+}  
+.article-title{
+    font-size: 24px;
+    text-decoration: underline;
+    font-weight: bold;
+    direction: rtl;
+    color: #000;
+}
+.article-p{
+    direction: rtl;
+    line-height: 1.7;
+    color: #000;
+    font-size: 24px;
+}
+.h1-right{
+    font-size: 64px;
+    font-weight: bold;
+    direction: rtl;
+    margin-right: 10px;
+
+}
+.h2-right{
+    font-size: 48px;
+    font-weight: bold;
+    direction: rtl;
+    margin-right: 10px;   
+}
+

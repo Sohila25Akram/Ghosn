@@ -1,0 +1,78 @@
+.profile{
+    margin-top: 60px;
+
+}
+.profile section:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.profile .Suggested_people{
+    border: 2px solid rgba(83, 172, 95, 1);
+    border-radius: 30px;
+    width: 20%;
+}
+.profile .Suggested_people h2{
+    text-align: center;
+}
+.profile .Suggested_people ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    margin-right: 20px;
+    
+}
+.profile .Suggested_people li a{
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile .Suggested_people li img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.profile  .myinformation{
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    gap: 65px;
+    background: rgba(83, 172, 95, 1);
+    border-radius: 20px;
+    padding: 15px;
+    color: #fff;
+}
+.profile .myinformation .myinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.profile .myinformation .myinfo>span{
+    text-align: end;
+}
+.profile .myinformation .myfollowingandfollowers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.profile .myinformation .myfollowingandfollowers>span{
+    direction: rtl;
+}
+.profile .myinformation .myimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.profile .myinformation .myimg img{
+    background: #000;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}

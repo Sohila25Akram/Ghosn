@@ -1,0 +1,237 @@
+.home .h-content{
+    margin-top: 20px;
+}
+.home .h-content .bg{
+    display: flex;
+    background: rgba(83, 172, 95, 1);
+    justify-content: space-around;
+    border-radius: 18px;
+    margin-top: 20px;
+    height: 450px;
+    width: 90%;
+    margin: auto;
+}
+.home .h-content .bg .bg-img{
+        background: #fff;
+        height: 376px;
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 175px;
+        margin-top: 12px;
+}
+.home .h-content .bg .bg-img img{
+height: 400px;
+width: 300px;
+}
+.home .h-content .bg .bg-text{
+width: 40%;
+direction: rtl;
+}
+.home .h-content .bg .bg-text h2{
+    font-size: 64px;
+    color: #fff;
+}
+.Most-plants-Selling{
+display: flex;
+width: 90%;
+    margin: 20px auto 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.Most-plants-Selling .cards{
+display: flex;
+gap: 5px;
+}
+.Most-plants-Selling .cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.Most-plants-Selling .cards .card img{
+    width: 300px;
+    height: 350px;
+}
+.Most-plants-Selling .content{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+.Most-plants-Selling .content h3{
+font-size: 32px;
+}
+.Most-plants-Selling .content p{
+    color: rgba(30, 30, 30, 0.5);
+    margin-top: -25px;
+    font-size: 18px;
+}
+.Most-plants-Selling .content button{
+    background: rgba(83, 172, 95, 1);
+    border: none;
+    color: #fff;
+    padding: 8px;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.Categories,.PracticalArticles,.about,.application{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.Categories .all-cards{
+    display: flex;
+    gap: 15px;
+    background: rgba(83, 172, 95, 1);
+    padding: 10px;
+    border-radius: 8px;
+}
+.Categories .all-cards .catigory-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Categories .all-cards .catigory-card:nth-child(2){
+    margin-top: -39px;
+}
+.Categories .all-cards .catigory-card img{
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    ;
+}
+.articles{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center
+}
+.article{
+    background: rgba(83, 172, 95, 1);
+    width: 90%;
+    border-radius: 25px;
+    display: flex;
+    height: 330px;
+}
+.article:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+}
+.article .ar-left{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 50px;
+}
+.article .ar-left h2{
+    margin-bottom: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 32px;
+}
+.article .ar-left p{
+    font-size: 18px;
+    line-break: anywhere;
+    text-align: end;
+}
+.article .ar-left button{
+    border: none;
+    background: #fff;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+.article .ar-right img{
+    height: 330px;
+    border-radius: 25px;
+    width: 490px;
+}
+button{
+    cursor: pointer;
+}
+.about-us{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.about-us div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.about-us div span{
+    background: rgba(83, 172, 95, 1);
+    padding: 5px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.about-us div span i{
+    font-size: 2rem;
+    color: #fff;
+}
+.about-us div h6{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.about-us div p{
+    color: rgba(30, 30, 30, 0.5);
+    margin: 10px 0px 45px;
+    padding: 0px;
+    font-size: 18px;
+    text-align: center;
+
+}
+.benefit_apllication div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background: rgba(83, 172, 95, 1);
+    height: 260px;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 10px;
+}
+.benefit_apllication div img{
+    height: 100px;
+    width: 100px;
+}
+.benefit_apllication div h6{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.benefit_apllication div p{
+    color: rgba(30, 30, 30, 0.5);
+    text-align: center;
+    line-break: anywhere;
+    font-size: 18px;
+    margin: 0;
+}
+.benefit_apllication{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+}
