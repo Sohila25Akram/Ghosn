@@ -18,10 +18,20 @@ html{
   color:#53AC5F;
   background-color: #FFFFFF;
   cursor: pointer;
+  display: inline-block;
 }
 .green-button{
   color:#FFFFFF;
   background-color: #53AC5F;
+}
+.outline-button{
+  color: #53AC5F;
+  font-size: 12px;
+  border: 1px solid #53AC5F;
+  border-radius: 50px;
+  padding: 8px 24px;
+  display: inline-block;
+  text-decoration: none;
 }
 .main-input{
   border: thin solid #53AC5F;

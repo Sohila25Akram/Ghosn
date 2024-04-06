@@ -1,0 +1,25 @@
+.products-container{
+    direction: ltr;
+}
+.product-tap{
+    /* background-color: red; */
+    padding: 16px 0 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.product-tap span{
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 13px;
+    border-radius: 16px;
+}
+.product-tap .main-button{
+    width: fit-content;
+    background-color: transparent;
+}
+.product-tap span.active{
+    color: #ffffff;
+    background-color: rgb(83, 172, 95, 80%);
+    text-decoration: underline;
+}
