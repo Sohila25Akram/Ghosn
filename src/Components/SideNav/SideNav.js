@@ -15,7 +15,7 @@ export function SideNav(){
                     <NavLink to='/dashboard/transactions'>Transactions</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/dashboard/products'>Products</NavLink>
+                    <NavLink to='/dashboard/productsDash'>Products</NavLink>
                 </li>
                 <li>
                     <NavLink to='/dashboard/orders'>Orders</NavLink>

@@ -1,24 +1,27 @@
-import { useState } from 'react';
-import './../styles/Products.css'
-
-export function Products(){
-    const categories = ["For Home", "For Garden", "Flowering"];
-    const [isActiveCategory, setIsActiveCategory] = useState(0);
-
-
-    const handleClick = (e) => {
-        setIsActiveCategory(e)
-    }
-    return(
-        <div className="container">
-            <div className="products-container">
-                <h2>Products</h2>
-                <div className="product-tap">
-                    {categories.map((category, index) => (
-                        <span key={index} className={`main-button green-button ${isActiveCategory === index ? 'active' : ''}`} onClick={() => handleClick(index)}>{category}</span>
-                    ))}
-                </div>
-            </div>
+import React from 'react'
+import ProductsList from '../components/productlist/ProductsList'
+import productsimg from "../assets/images/products.png"
+import "../styles/products.css"
+const Products = () => {
+  return (
+    
+<>
+<div className="products">
+    <div className="p-header">
+        <div className="content">
+            <h2>نباتات زهرية</h2>
+            <p>ابحث عن المكمل
+المثالي لتزيين منزلك واصنع 
+تأثيرا ايجابيا في بيئتك</p>
         </div>
+        <div className="img"><img src={productsimg} alt="" /></div>
+    </div>
+    <ProductsList/>
+</div>
+
+</>
+
     )
 }
+
+export default Products
