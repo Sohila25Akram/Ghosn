@@ -1,0 +1,23 @@
+.header{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header .h-left{
+    display: flex;
+    align-items: center;
+}
+.header .h-left img{    width: 80px;
+}
+.header .h-left span{
+    font-size: 55px;
+    transform: rotate(-15deg);
+    color: rgba(83, 172, 95, 1);
+}
+.header .h-center{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+}
