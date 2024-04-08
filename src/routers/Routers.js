@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom"
-import Home from '../Pages/Home'
-import Products from '../Pages/Products'
-import Profile from '../Pages/Profile'
-import Article from '../Pages/Article'
+import Home from '../pages/Home'
+import Products from '../pages/Products'
+import Profile from '../pages/Profile'
+import Article from '../pages/Article'
 import { Details } from '../pages/Details';
 import { Cart } from '../pages/Cart';
 import { DashboardLayout } from "../Layout/DashboardLayout";
