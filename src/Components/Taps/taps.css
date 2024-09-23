@@ -1,24 +1,22 @@
-.products-container{
-    direction: ltr;
-}
-.product-tap{
-    /* background-color: red; */
-    padding: 16px 0 32px;
-    display: flex;
-    justify-content: space-between;
-}
-.product-tap span{
+.product-tap span,
+.article-tap span,
+.community-tap span{
     color: #000000;
     font-size: 14px;
     font-weight: bold;
     padding: 6px 13px;
     border-radius: 16px;
+    height: fit-content;
 }
-.product-tap .main-button{
+.product-tap .main-button,
+.article-tap .main-button,
+.community-tap .main-button{
     width: fit-content;
     background-color: transparent;
 }
-.product-tap span.active{
+.product-tap span.active,
+.article-tap span.active,
+.community-tap span.active{
     color: #ffffff;
     background-color: rgb(83, 172, 95, 80%);
     text-decoration: underline;

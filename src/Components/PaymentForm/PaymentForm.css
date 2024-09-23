@@ -1,4 +1,4 @@
-form{
+.payment-f{
   background-color: #FFFFFF;
   color: #000;
   min-height: 100vh;
@@ -6,12 +6,12 @@ form{
   padding: 40px 24px;
   font-size: 0.875rem;
 }
-.payment-header{
+.payment-f .payment-header{
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-.payment-header .profile-img{
+.payment-f .payment-header .profile-img{
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -19,20 +19,20 @@ form{
   background-color: #FFFFFF;
   border: 2px solid #53AC5F;
 }
-.payment-header .profile-img img{
+.payment-f .payment-header .profile-img img{
   width: 100%;
 }
-.payment-header h3{
+.payment-f .payment-header h3{
   font-size: 1.25rem;
   text-decoration: underline;
 }
-.payment-methods{
+.payment-f .payment-methods{
   display: flex;
   justify-content: space-between;
   height: 50px;
   margin-top: 16px;
 }
-.payment-methods div{
+.payment-f .payment-methods div{
   height: 100%;
   width:27%;
   border: 1px solid #D9D9D9;
@@ -42,24 +42,24 @@ form{
   align-items: center;
   cursor: pointer;
 }
-.payment-methods div.active{
+.payment-f .payment-methods div.active{
   border:2px solid #53AC5F
 }
-.payment-methods div img{
+.payment-f .payment-methods div img{
   height: 45%;
 }
-.chosen-card{
+.payment-f .chosen-card{
   border-radius: 8px;
   display: flex;
 }
-.chosen-card div{
+.payment-f .chosen-card div{
   width:80px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 16px;
 }
-.chosen-card input{
+.payment-f .chosen-card input{
   background-color: transparent;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -68,17 +68,17 @@ form{
   padding-left: 12px;
   flex-grow: 1;
 }
-.chosen-card img{
+.payment-f .chosen-card img{
   width:80%;
 }
-.flex-container{
+.payment-f .flex-container{
   display: flex;
   justify-content: space-between;
 }
-.flex-container div{
+.payment-f .flex-container div{
   width:46%;
 }
-label{
+.payment-f label{
   display: inline-block;
   margin: 16px 0 8px;
 }
@@ -92,29 +92,29 @@ input{
 input::placeholder{
   color: #D9D9D9;
 }
-hr{
+.payment-f hr{
   background-color: #FFFFFF;
   border: none;
   width:100%;
   height: 2px;
   margin: 16px 0;
 }
-.calculate-cost div{
+.payment-f .calculate-cost div{
   display: flex;
   justify-content: space-between;
   padding-bottom: 12px;
   margin-bottom: 8px;
 }
-.calculate-cost div > :nth-child(2){
+.payment-f .calculate-cost div > :nth-child(2){
   font-weight: bold;
 }
-form .back-btn{
+.payment-f .back-btn{
   margin-top: 24px;
   border: thin solid #53AC5F;
   background-color: rgb(211, 240, 192, 46%);
   color: #53AC5F;
 }
-.error-message{
+.payment-f .error-message{
   display: inline-block;
   font-size: 12px;
   color: #ba1616;
@@ -123,46 +123,46 @@ form .back-btn{
   direction: ltr;
 }
 @media (min-width:567){
-  .payment-methods div img{
+  .payment-f .payment-methods div img{
     height: 60%;
   }
 }
 @media (min-width:768px){
-  form{
+  .payment-f {
     padding-left: 56px;
     padding-right: 56px
   }
 }
 @media (min-width:992px){
-  form .back-btn{
+  .payment-f  .back-btn{
     display: none;
   }
-  form{
+  .payment-f {
     padding: 32px;
     min-height: fit-content;
     border-radius: 20px;
     background-color: #53AC5F;
     color: #FFFFFF;
   }
-  .payment-methods div.active{
+  .payment-f .payment-methods div.active{
     border: 2px solid #FFFFFF;
   }
-  .chosen-card input{
+  .payment-f .chosen-card input{
     border-left: thin solid #FFFFFF;
   }
   input::placeholder{
     color: #FFFFFF;
   }
-  hr{
+  .payment-f  hr{
     background-color: rgb(211, 240, 192, 46%);
   }
-  form .green-button{
+  .payment-f  .green-button{
     background-color: #FFFFFF;
     color: #53AC5F;
   }
 }
 @media (min-width:1200px){
-  .cart-products{
+  .payment-f .cart-products{
     width: 55%;
   }
 }

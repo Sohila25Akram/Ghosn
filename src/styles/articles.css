@@ -1,0 +1,17 @@
+.articles-container{
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+    margin-top: 32px;
+}
+.article-tap{
+    direction: ltr;
+}
+@media (min-width: 768px) {
+    .articles-container .article .ar-cont{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+    }   
+}

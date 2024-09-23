@@ -8,10 +8,12 @@ import './SliderComponent.css';
 
 register();
 
+const api = 'https://ghosn.runasp.net'
+
 const images = [initialImage, loginImage, initialImage];
 const images2 = [initialImage, loginImage, initialImage, loginImage, initialImage, loginImage, initialImage, loginImage, initialImage, loginImage, initialImage, loginImage];
 
-export function SliderPotComponent (){
+export function SliderPotComponent ({image}){
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleNext = (nextIndex) => {
@@ -38,28 +40,13 @@ export function SliderPotComponent (){
                                 transform:`translate(${currentIndex * 100}%)`
                             }}
                         >
-                        {images.map((image, index) => (
-                            <div key={index} className='modified-container'>
-                                <img src={image} alt='initial'/>
-                            </div>
-                        ))}
+                        {image && <div className='modified-container'>
+                                <img src={`${api}/${image}`} alt='initial'/>
+                            </div>}
                         </div>
-                        <span className='next-btn' onClick={() => handleNext(getNextIndex())}>
-                            <i className="fa-solid fa-chevron-left"></i>
-                        </span>
-                        <ul className='bullets-container'>
-                            {images.map((image, index) => (
-                                <li key={index} className={`bullet ${currentIndex === index ? 'active' : ''}`}></li>
-                            ))}
-                        </ul>
-                        
                     </div>
                 </div>
             </div> 
-            <div>
-                <h4>لون الوعاء المتوفر:</h4>
-                <PotColor currentIndex={currentIndex} onPotClick={handlePotClick} />    
-            </div>
         </div>
     )
 }
@@ -112,24 +99,15 @@ export function SliderPanel({ setIsOpen, currentClickedIndex, images}){
     const [windowSize, setWindowSize] = useState(false)
     const [translateValue, setTranslateValue] = useState(0)
 
-    // const choices = document.querySelector('.panel-multiple-choices');
 
     const handleNext = () =>{
         if(currentIndex < images.length-1)
             setCurrentIndex(currentIndex + 1);
-
-        // if(currentIndex >= 1 && currentIndex < images.length-1){
-        //     choices.style.transform = `translateX(${translateValue * (currentIndex - 1) + translateValue}px)`;
-        // }
     }
 
     const handlePrev = () =>{
         if(currentIndex > 0)
             setCurrentIndex(currentIndex - 1);
-
-        // if(currentIndex > 0){
-        //     choices.style.transform = `translateX(${translateValue * (currentIndex - 1)}px)`;
-        // }
     }
 
     useEffect(() => {

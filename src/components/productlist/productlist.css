@@ -1,42 +1,13 @@
 .pro{
-    width: 90%;
-    margin: auto;
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    padding: 0 16px;
 }
-.pro .product{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    height: 440px;
-}
-.pro .product img{
-    width: 300px;
-    height: 350px;
-}
-.pro .product span:nth-child(1){
-    font-size: 24px;
-    font-weight: bold;
-}
-.pro .product span:nth-child(2){
-    font-size: 18px;
-    font-weight: bold;
-}
-.pro .product button{
-        width: 50%;
-    padding: 10px 0px;
-    border: none;
-    background: rgba(83, 172, 95, 1);
-    border-radius: 8px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    display: none;
-}
-.product:hover button{
-    display: block;
+@media (min-width: 1400px){
+    .pro{
+        padding: 0 56px;
+    }
 }

@@ -1,14 +1,149 @@
-.header{
-
+.header-container .container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.header-mobile{
+    position: fixed;
+    top:0;
+    border-bottom: 1px solid #A9A9A9;
+    box-shadow: 0 4px 12px 0 rgb(169, 169, 169, 27%);
+    background-color: #fff;
+    z-index: 999;
+}
+.header-mobile .hm-right{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: 10px;
+}
+.header-mobile .hm-right > div{
+    padding: 48px 8px 4px 16px;
+    position: fixed;
+    right: 0px;
+    top: 79px;
+    width: 100%;
+    gap: 16px;
+    background-color: #fff;
+    z-index: 999999999;
+    border-top: 1px solid #A9A9A9;
+    height: 90vh;
+    overflow: auto;
+}
+.header-mobile .icons-mob{
+    border-radius: 4px;
+}
+.header-mobile .menu-mob{
+    list-style: none;
+    color: #1e1e1e80;
+    width: 100%;
+}
+.header-mobile .menu-mob li a{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 16px;
+}
+.header-mobile .menu-mob li span{
+    display: block;
+    width: 100%;
+    padding: 16px 8px 16px;
+    border-radius: 8px;
+    margin-top: -8px;
+}
+.header-container .icons-mob{
+    /* margin-left: 16px; */
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.header-mobile .menu-mob li .icons-mob{
+    margin: 0 16px;
+    position: relative;
+}
+.header-mobile .menu-mob li .si-nav-links{
+    flex-grow: 1;
+}
+.header-mobile .menu-mob li .si-nav-links hr{
+    margin: 8px 0 16px;
+    background-color: #E5DCDC;
+    height: 1px;
+    border: none;
+    width: 100%;
+    margin-right: auto;
+}
+.header-mobile .menu-mob .log-nav-mob{
+    display: flex;
+    align-items: center;
+    margin-bottom: 72px;
+    padding: 0 16px;
+}
+.header-mobile .menu-mob .log-nav-mob > div:last-child{
+    margin-right: 32px;
+}
+.header-mobile .menu-mob .log-nav-mob span{
+    display: block;
+    padding: 0;
+}
+.header-mobile .menu-mob .log-nav-mob span:first-child{
+    margin-bottom: 8px;
+}
+.header-mobile .menu-mob li a.active span{
+    background-color: rgba(83, 172, 95, 0.2);
+}
+.header-mobile .menu-mob li a.active .icons-mob{
+    background-color: #fff;
+}
+.header-mobile .menu-mob .log-btn{
+    margin: 0 96px 56px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+.header-mobile .menu-mob .side-bar{
+    background-color: rgba(83, 172, 95, 0.2);
+    width: 72px;
+    height: 1242px;
+    position: absolute;
+    top: 4px;
+}
+.header-mobile .menu-mob .log-mob-btn{
+    margin-right: 88px;
+    margin-top: 8px;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-mobile .hm-left{
+    height: 79px;
+}
+.header-mobile .hm-left img{
+    height: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #A9A9A9;
+    box-shadow: 0 4px 12px 0 rgb(169, 169, 169, 27%);
+    position: fixed;
+    z-index: 999;
+    top:0;
+    background-color: #fff;
+    min-height: 80px;
 }
 .header .h-left{
     display: flex;
     align-items: center;
 }
-.header .h-left img{    width: 80px;
+.header .h-left img{    
+    width: 80px;
 }
 .header .h-left span{
     font-size: 55px;
@@ -18,6 +153,42 @@
 .header .h-center{
     display: flex;
     align-items: center;
-    gap: 30px;
-    font-size: 18px;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 8px 32px;
+}
+.log-nav{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 16px;
+    padding: 0 16px;
+    background-color: rgba(83, 172, 95, 0.2);
+    height: 80px;
+}
+.log-profile-nav{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: thin solid #A9A9A9;
+    text-align: center;
+}
+.log-profile-nav img{
+    height: 100%;
+}
+@media only screen  and (max-width:868px){
+    .header{
+        display: none;
+    }
+    .header-mobile{
+        display: flex !important;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 768px){
+    .header-mobile .hm-right > div{
+        max-width: 346px;
+        border-left: 1px solid #A9A9A9;
+    }
 }

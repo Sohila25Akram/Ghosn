@@ -8,6 +8,10 @@ html{
   direction: rtl;
   scroll-behavior: smooth;
 }
+a{
+  text-decoration: none;
+  color:  #1E1E1E80;
+}
 .main-button{
   width:100%;
   border: none;
@@ -40,7 +44,7 @@ html{
 }
 .container{
   width:100%;
-  padding: 24px;
+  padding: 100px 24px;
 
 }
 @media (min-width:768px){
@@ -51,7 +55,8 @@ html{
 }
 @media (min-width:992px){
   .container{
-    padding: 64px 80px;
+    /* padding: 64px 80px; */
+    padding: 120px 80px;
   }
   .main-input{
     border: none;
@@ -66,6 +71,7 @@ html{
 }
 @media (min-width:1400px){
   .container{
-    padding: 80px 96px;
+    /* padding: 80px 96px; */
+    padding: 140px 96px;
   }
 }

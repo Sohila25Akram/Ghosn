@@ -1,15 +1,40 @@
 import { useState, useEffect } from 'react';
-import { PieChart, Pie, Sector, ResponsiveContainer } from 'recharts';
-import initialImage from '../assets/image.png';
+// import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from 'recharts';
+// import { RadialBarChart, Tooltip, Legend, RadialBar } from 'recharts';
+import initialImage from '../assets/image.png'
 import './../styles/Customers.css'
+import { Spinner } from '../Components/Charts/Charts';
+import { Range } from '../Components/Charts/Charts';
 
-const data = {
-    value: 400
-}
+const currentCustomers = [
+    { name: 'fill', value: 30, color: '#008D3E' },
+    { name: 'empty', value: 70, color: '#E2E2E2' },
+];
+
+const newCustomers = [
+    { name: 'fill', value: 30, color: '#008D3E' },
+    { name: 'empty', value: 70, color: '#E2E2E2' },
+];
+const targetCustomers = [
+    { name: 'fill', value: 30, color: '#008D3E' },
+    { name: 'empty', value: 70, color: '#E2E2E2' },
+];
+const retargetCustomers = [
+    { name: 'fill', value: 30, color: '#008D3E' },
+    { name: 'empty', value: 70, color: '#E2E2E2' },
+];
+    
 
 export function Customers(){
+
+    const range = {
+        male: 36,
+        female: 64
+    };
+    
     return(
-        <div className="container">
+        <div className="container d-flex customers">
+            <div>
             <div className="customers-overview data-box-container">
                 <div className='label-cont'>
                     <div>
@@ -19,7 +44,28 @@ export function Customers(){
                     <i className="ri-equalizer-line"></i>
                 </div>
                 {/* import the spinner */}
-                <Spinner />
+                <div className='pieChart-container'>
+                    <div className='part'>
+                        <Spinner data={currentCustomers} />                       
+                        <span className='bottom-title'>current customers</span>
+                        <span className='fill-value'><span className='percent-numeric'>{currentCustomers.find(item => item.name === "fill").value}</span>%</span>
+                    </div>
+                    <div className='part'>
+                        <Spinner data={newCustomers} />
+                        <span className='bottom-title'>New customers</span>
+                        <span className='fill-value'><span className='percent-numeric'>{newCustomers.find(item => item.name === "fill").value}</span>%</span>
+                    </div>
+                    <div className='part'>
+                        <Spinner data={targetCustomers} />
+                        <span className='bottom-title'>Target customers</span>
+                        <span className='fill-value'><span className='percent-numeric'>{targetCustomers.find(item => item.name === "fill").value}</span>%</span>
+                    </div>
+                    <div className='part'>
+                        <Spinner data={retargetCustomers} />
+                        <span className='bottom-title'>Retarget customers</span>
+                        <span className='fill-value'><span className='percent-numeric'>{retargetCustomers.find(item => item.name === "fill").value}</span>%</span>
+                    </div>
+                </div>
             </div>
             <div className='states-overview data-box-container'>
                 <div className='label-cont'>
@@ -29,12 +75,13 @@ export function Customers(){
                     </div>
                     <i className="ri-equalizer-line"></i>
                 </div>
-                <span>Male</span><br />
-                <Range />
+                <span className='range-label'>Male</span><br />
+                <Range gender={range.male} />
                 {/* <span className='gender-rate male'></span><br /> */}
-                <span>Female</span><br />
-                <Range />
+                <span className='range-label'>Female</span><br />
+                <Range gender={range.female} />
                 {/* <span className='gender-rate female'></span> */}
+            </div>
             </div>
             <div className="customers-container data-box-container">
                 <h3>Current Customer</h3>
@@ -62,6 +109,9 @@ export function Customers(){
                                 <a href={"/"} className='main-button green-button'>View Profile</a>
                             </td>
                         </tr> */}
+                        <tr>
+                            <Customer />
+                        </tr>
                         <tr>
                             <Customer />
                         </tr>
@@ -106,45 +156,3 @@ export function Customer(){
         </>
     )
 }
-
-export function Range(){
-    const [range, setRange] = useState(36);
-
-    useEffect(() => {
-        const rangeTab = document.querySelector(".gender-rate div");
-
-        if (rangeTab) {
-            rangeTab.style.width = `${range}%`;
-        }
-    }, []);
-    
-    return(
-        <>
-            <div className="gender-rate">
-            <div></div>
-            </div>
-            <span>{range}%</span><br></br>
-        </>
-    )
-}
-
-export function Spinner(){
-
-    return(
-        <>
-            <ResponsiveContainer width="100%" height="100%">
-                <PieChart width={400} height={400}>
-                    <Pie
-                        data={data}
-                        innerRadius={60}
-                        outerRadius={80}
-                        fill="#8884d8"
-                        dataKey="value"
-                        
-                    />
-                </PieChart>
-            </ResponsiveContainer>
-        </>
-    )
-}
-

@@ -5,38 +5,50 @@
 .profile section:nth-child(1){
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.profile .Suggested_people{
+.profile .suggested-people{
+    border: 2px solid rgba(83, 172, 95, 1);
+    border-radius: 30px;
+    width: 24%;
+    padding: 16px;
+}
+/* .profile .Suggested_people{
     border: 2px solid rgba(83, 172, 95, 1);
     border-radius: 30px;
     width: 20%;
-}
-.profile .Suggested_people h2{
+}*/
+/* .profile .Suggested_people h2{
     text-align: center;
-}
-.profile .Suggested_people ul{
+} */
+.profile .suggested-people ul{
     list-style: none;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: end;
-    margin-right: 20px;
+    align-items: end; */
+    /* margin-right: 20px; */
     
 }
-.profile .Suggested_people li a{
+.profile .suggested-people ul li{
+    margin: 8px 0;
+}
+.profile .suggested-people span{
+    display: none;
+}
+/* .profile .Suggested_people li a{
     color: #000;
     display: flex;
     align-items: center;
     gap: 5px;
-}
+} */
 
-.profile .Suggested_people li img{
+/*.profile .Suggested_people li img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #000;
-}
+} */
 .profile  .myinformation{
     width: 60%;
     display: flex;
@@ -71,8 +83,42 @@
     gap: 4px;
 }
 .profile .myinformation .myimg img{
-    background: #000;
+    /* background: #000; */
+    background-color: #fff;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+.content-of-tap{
+    border: 2px solid #53AC5F;
+    border-radius: 30px;
+    padding: 40px 24px;
+    margin-top: 24px;
+}
+.profile .suggested-people {
+    display: none;
+    min-width: 300px;
+    /* padding: 16px; */
+}
+.profile .profile-tap{
+    list-style-type: none;
+    display: flex;
+    margin-top: 32px;
+}
+.profile .profile-tap li{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 13px;
+    border-radius: 16px;
+}
+.profile .profile-tap .active{
+    color: #ffffff;
+    background-color: rgb(83, 172, 95, 80%);
+    text-decoration: underline;
+}
+@media (min-width: 992px) {
+    .profile .suggested-people {
+        display: block;
+    }
 }

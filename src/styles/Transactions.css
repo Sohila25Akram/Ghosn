@@ -1,7 +1,7 @@
 .transactions-container{
     direction: ltr;
 }
-h2{
+.transactions-container h2{
     padding-bottom: 24px;
 }
 .transactions-table-container{

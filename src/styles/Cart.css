@@ -14,6 +14,7 @@
 }
 .payment-form-container.open{
   transform: translateX(0);
+  padding-top: 80px;
 }
 .pay-btn{
   margin-bottom: 32px;
@@ -41,5 +42,40 @@
   }
   .pay-btn{
     display: none;
+  }
+}
+
+
+.checkout-container .slider-panel-container{
+  width:40%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 32px;
+  display: block;
+}
+.checkout-container .slider-panel-container ul{
+  list-style-type: none;
+  
+}
+.checkout-container .slider-panel-container ul li{
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 1px dashed #D9D9D9; */
+  padding: 16px 0;
+  margin-top: 16px;
+  color: #6A6A6A
+}
+.checkout-container .slider-panel-container ul li:not(:last-child){
+  border-bottom: 1px dashed #D9D9D9;
+}
+.checkout-container .slider-panel-container ul li span:first-child{
+  font-weight: bold;
+}
+.checkout-container .slider-panel-container button{
+  margin-top: 40px;
+}
+@media (min-width: 992px) {
+  .payment-form-container.open{
+    padding-top: 0;
   }
 }

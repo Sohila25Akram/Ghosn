@@ -1,0 +1,18 @@
+.search-people-upper-corner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px
+}
+.search-people-upper-corner .search-container{
+    width: 100%;
+}
+.search-people-upper-corner a{
+    text-decoration: none;
+    color: #1E1E1E80;
+    cursor: pointer;
+}
+.search-people-container .pro{
+    display: block;
+}

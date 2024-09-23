@@ -1,0 +1,113 @@
+.product{
+    text-align: center;
+    width: 46%;
+    transition: .3s;
+    position: relative;
+}
+.product .img-container{
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.product .img-container img{
+    height: 100%;
+}
+.product span{
+    display: inline-block;
+}
+.product > span:first-of-type{
+    font-size: 18px;
+    margin: 8px 0;
+}
+.product span:last-of-type{
+    direction: ltr;
+    font-size: 18px;
+    color: rgb(30, 30, 30, 50%);
+    margin-bottom: 8px;
+}
+.product .product-btn{
+    visibility: hidden;
+}
+.product .main-button{
+    width: 80%;
+    padding: 8px 0;
+}
+.product:hover{
+    transform: translateY(-12px);
+}
+.product:hover .product-btn{
+    visibility: visible;
+}
+.product .options-btn{
+    position: absolute;
+    top:8px;
+    right:16px;
+    cursor: pointer;
+    display: none;
+}
+.product .options-btn i{
+    font-size: 24px;
+}
+.product .options-list{
+    background-color: #fff;
+    border: 1px solid #A7A7A7;
+    width:140px;
+    list-style-type: none;
+    border-radius: 8px;
+    position: absolute;
+    top:32px;
+    right: -32px;
+    z-index: 2;
+}
+.product .options-list li{
+    padding: 8px 16px;
+    color: rgb(0, 0, 0, 64%);
+    cursor: pointer;
+}
+.product .options-list li:not(:last-child){
+    border-bottom: 1px solid #dcdcdc;
+}
+.product .options-list li .link-option{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.product .options-list li:hover a{
+    color:#000
+}
+@media (min-width: 567px){
+    .product{
+        width:30%;
+    }
+}
+@media (min-width: 768px){
+    .product .main-button{
+        width: 50%;
+    }
+}
+@media (min-width: 992px){
+    .product{
+        width:28%;
+    }
+    .product .img-container{
+        height: 268px;
+    }
+    .product .main-button{
+        padding: 14px 0;
+    }
+}
+@media (min-width: 1200px){
+    .product{
+        width:30%;
+    }
+}
+@media (min-width: 1400px){
+    .product{
+        width:26%;
+    }
+    .product .img-container{
+        height: 362px;
+    }
+}

@@ -18,22 +18,19 @@ export function PotColor({currentIndex, onPotClick}){
     )
 }
 
-export function Quantity(){
-    const [chosenQuantity, setChosenQuantity] = useState(1)
-    
+export function Quantity({quantity, onQuantityChange}){
     const handleIncrement  = () => {
-        setChosenQuantity((e) => (e + 1));
+        onQuantityChange(quantity + 1);
     }
 
     const handleDecrement  = () => {
-        if(chosenQuantity > 1)
-            setChosenQuantity((e) => (e - 1));
+        if (quantity > 1) onQuantityChange(quantity - 1);
     }
     
     return(
         <div className='quantity'>
             <i className="ri-add-line" onClick={handleIncrement}></i>
-            <span>{chosenQuantity}</span>
+            <span>{quantity}</span>
             <i className="ri-subtract-line" onClick={handleDecrement}></i>
         </div>
     )

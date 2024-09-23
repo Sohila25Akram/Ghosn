@@ -4,8 +4,12 @@ import visa from '../../assets/visa.png';
 import paypal from '../../assets/paypal.png';
 import masterCard from '../../assets/masterCard.png';
 import './PaymentForm.css';
+import axios from 'axios';
 
-export function PaymentForm({isOpen, setIsOpen}){
+
+const api = 'https://ghosn.runasp.net'
+const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2MTFlYjM5Ny0zZjQxLTQ4YzAtYWY4Zi1kZTJjNmU5MzJhZjEiLCJzdWIiOiJMZ0VZdkh6ZVd5Y1Y2NCIsImVtYWlsIjoidXNlckBleGFtcGxlLmNvbSIsIm5hbWUiOiJqbGpsIGlvIiwidWlkIjoiOCIsInJvbGUiOiJXcml0ZXIiLCJuYmYiOjE3MTU2MDc1NDYsImV4cCI6MTcxNTYwNzcyNiwiaWF0IjoxNzE1NjA3NTQ2LCJpc3MiOiJNYWluU3RyZWFtQmFja2VuZC5WMCIsImF1ZCI6IkZyb250RW5kSW5EZXZlbG9wbWVudCJ9.tJRwlX7OzPOhwSSEajIoB9ilKiSqy3dc-keip8Hie14"
+export function PaymentForm({isOpen, setIsOpen, cartProducts, totalPiceOfAll}){
     const [payMethod, setPayMethod] = useState('masterCard')
     const [inputFields, setInputFields] = useState({
         cardNumber:'',
@@ -15,6 +19,7 @@ export function PaymentForm({isOpen, setIsOpen}){
     })
     const [errors, setErrors] = useState({})
     const [formSubmitted, setFormSubmitted] = useState(false);
+    const [totalAmount, setTotalAmount] = useState(0)  
 
     const handleClick = () => {
         setIsOpen(false);
@@ -54,7 +59,9 @@ export function PaymentForm({isOpen, setIsOpen}){
         event.preventDefault();
         if (Object.keys(errors).length === 0) {
             console.log("Form submitted with data:", inputFields);
+            addOrder();
         }
+        addOrder();
     }
 
     useEffect(() => {
@@ -64,9 +71,30 @@ export function PaymentForm({isOpen, setIsOpen}){
         }
     }, [formSubmitted, inputFields])
 
+    const addOrder = async() => {
+        try{
+            const orderItems = cartProducts.map(product => ({
+                productId: product.id,
+                quantity: product.quantity,
+                potVariationId: 0
+            }));
+            const response = await axios.post(`${api}/api/Auth/CreateOrder`, {
+                orderProducts : orderItems
+            }, {
+                headers: {
+                    "Content-Type" : "application/json",
+                    "Authorization" : `Bearer ${token}`
+                }
+            })
+            console.log("Order created Successsfully", response.data)
+        }catch (error){
+            console.log("error to craete order", error)
+        }
+      
+    }
     return(
         <>
-            <form onSubmit={handleSubmit}>
+            <form className='payment-f' onSubmit={handleSubmit}>
                 <div className="payment-header">
                     <div className="profile-img">
                         <img src={loginImage} alt='profile' />
@@ -147,15 +175,16 @@ export function PaymentForm({isOpen, setIsOpen}){
                 <div className='calculate-cost'>
                     <div>
                         <span>المجموع</span>
-                        <span>850E.P</span>
+                        {/* <span>850E.P</span> */}
+                        <span>{totalPiceOfAll.toFixed(2)}E.P</span>
                     </div>
                     <div>
                         <span>الشحن والضرائب</span>
-                        <span>100E.P</span>
+                        <span>0E.P</span>
                     </div>
                     <div>
                         <span>الاجمالي</span>
-                        <span>950E.P</span>
+                        <span>{totalPiceOfAll.toFixed(2)}E.P</span>
                     </div>
                 </div>
                 <button type='submit' className='main-button green-button' onClick={() => setFormSubmitted(true)}>اكمل الدفع</button>

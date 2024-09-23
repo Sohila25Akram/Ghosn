@@ -1,0 +1,91 @@
+.form-login{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-login .account-name,
+.form-login .account-password{
+    width: 100%;
+    text-align: center;
+}
+.form-login .account-name .input-name,
+.form-login .account-password .input-password{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    direction: rtl;
+    outline: none;
+    padding: 0px 20px 0 0;
+    width: 83%;
+    margin-top: 20px;
+}
+.form-login .account-name .input-name::placeholder,
+.form-login .account-password .input-password::placeholder{
+    color: #fff;
+}
+.form-login .account-name i,
+.form-login .account-password i
+{
+    margin-left: -16px;
+    color: #fff;
+}
+input:-internal-autofill-selected
+{
+    background-color: transparent !important;
+
+}
+.form-login .account-accept{
+    width: 100%;
+    text-align: end;
+    padding: 0 10px 0 0;
+    color: #fff;
+}
+.form-login .account-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 5px 30px 8px;
+    border-radius: 20px;
+    background: #fff;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    font-family: system-ui;
+}
+.other-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.other-login .face{
+    display: flex;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.other-login .face i{
+    color: rgb(1, 101, 225);
+    font-size: 15px;
+}
+.other-login .google{
+    background: #fff;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.other-login .google img{
+    width: 15px;
+    object-fit: cover;
+}

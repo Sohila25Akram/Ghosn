@@ -1,0 +1,37 @@
+.pots-cantainer .p-header{
+    display: flex;
+    background: rgba(83, 172, 95, 1);
+    border-radius: 18px;
+    padding: 0 24px;
+    overflow: hidden;
+}
+.pots-cantainer .p-header .content{
+    margin-right: 16px;
+    align-self: center;
+}
+.pots-cantainer .p-header .content h2{
+    font-size: 26px;
+    color: #fff;
+    padding-bottom: 16px;
+}
+.pots-cantainer .p-header .content p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+.pots-cantainer .p-header .img{
+    background-color: rgb(255, 255, 255, 89%);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    margin-top: 12px;
+    width: 60%;
+    min-width: 157px;
+    max-width: 484px;
+    display: flex;
+    justify-content: center;
+}
+.pots-cantainer .p-header .img img{
+    display: block;
+    width: 82%;
+    margin-top: -28%;
+}

@@ -1,0 +1,9 @@
+.suggested-people ul{
+    list-style-type: none;
+}
+.suggested-people ul li{
+    margin: 8px 0;
+}
+.suggested-people span{
+    display: none;
+}

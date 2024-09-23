@@ -8,11 +8,11 @@
   font-size: 1.5rem;
   display: inline-block;
 }
-.price{
+.details-content .price{
   font-size: 1.125rem;
   color: #53AC5F;
 }
-p{
+.details-content p{
   color: #6A6A6A;
   padding: 32px 0;
   line-height: 19px;
@@ -22,6 +22,7 @@ p{
   flex-wrap: wrap;
   gap:16px;
   margin-top: 32.9px;
+  margin-bottom: 40px;
 }
 .numeric-data div span span,
 .numeric-data div span span i{
@@ -72,6 +73,19 @@ h4{
 }
 .rating-container{
   text-align: center;
+}
+.new-cont-details{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+}
+@media (min-width:567px){
+  .new-cont-details{
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 @media (min-width:768px) {
   .label{
@@ -128,6 +142,9 @@ h4{
     display: block;
   }
   .down-pay-container{
-    width:70%;
+    width:100%;
+  }
+  .details-content .right-content{
+    width:100%
   }
 }

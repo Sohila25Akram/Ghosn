@@ -1,0 +1,66 @@
+.slider-panel-blur-container.blur-fix{
+    padding-bottom: 40px;
+}
+.slider-panel-container.search-fix .search-container{
+    width:100%;
+    margin-top: 16px;
+}
+.slider-panel-container.search-fix {
+    color: #000;
+    overflow: hidden
+}
+.slider-panel-container.search-fix .pro{
+    display: flex;
+    padding-bottom: 40px;
+}
+.search-flex-filter-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.search-flex-filter-search > span{
+    min-width:48px;
+    height: 48px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    line-height: 2.1;
+    font-size: 22px;
+    cursor: pointer;
+}
+.searched-items{
+    height: 80%;
+    overflow: auto;
+}
+.searched-items .searched-user-snapshot{
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searched-items .searched-user-snapshot{
+    font-size: 12px;
+    color:rgba(30, 30, 30, 0.5);
+}
+.searched-items .searched-user-snapshot .green-button{
+    width: fit-content;
+    padding: 8px;
+    font-size: 12px;
+}
+.searched-items .searched-user-snapshot:not(:last-child){
+    border-bottom: 1px solid #D9D9D9;
+}
+.searched-items .searched-user-snapshot .people-snapshot > div:last-child span{
+    display: none;
+}
+.pro > .searched-user-snapshot:last-child{
+    margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+    .slider-panel-container.search-fix .search-container input{
+        background-color: rgb(83, 172, 95, 20%);
+    }
+    .slider-panel-container.search-fix .search-container .search-icon{
+        background-color: #fff;
+    }
+}

@@ -1,0 +1,108 @@
+.post-container{
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-radius: 20px;
+    padding: 32px 24px;
+    background-color: rgba(233, 234, 243, 0.2);
+}
+.post-container:not(:last-child){
+    margin-bottom: 56px;
+}
+.post-container .post-container-top-part{
+    display: flex;
+    justify-content: space-between;
+}
+.post-container .post-container-top-part > span{
+    cursor: pointer;
+}
+.post-container .post-container-top-part > div{
+    display: flex;
+    gap: 8px;
+}
+.post-container .post-container-top-part h4{
+    margin: 0;
+}
+.post-container .post-content{
+    margin: 16px 0 24px;
+}
+.post-container .post-content .post-img-container{
+    max-width: 300px;
+    margin-top: 16px;
+}
+.post-container .post-content .post-img-container img{
+    width: 100%;
+
+}
+.post-container .post-container-bottom-part{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    position: relative;
+}
+.post-container .post-container-bottom-part span{
+    margin-left: 16px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    cursor: pointer;
+}
+.post-container .post-container-bottom-part a{
+    color: #000;
+}
+.people-snapshot h4{
+    margin-bottom: 0;
+}
+.people-snapshot ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    margin-right: 20px;
+    
+}
+.people-snapshot {
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.people-snapshot .people-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.people-snapshot .people-img img{
+    width: 100%;
+}
+.people-snapshot > div:last-child span{
+    font-size: 14px;
+}
+.emojis-container{
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    padding: 2px 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 24px;
+    right: 0;
+}
+.emojis-container > span{
+    margin: 0 !important;
+}
+.emoji-like-btn +.emojis-container{
+    display: none;
+}
+.emoji-icon {
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.2s;
+}
+.emoji-icon:hover {
+    transform: scale(1.2);
+}

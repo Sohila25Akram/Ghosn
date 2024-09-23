@@ -1,0 +1,120 @@
+.form-sign{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-sign .account-name,
+.form-sign .account-password,
+.form-sign .account-confirmpassword,
+.form-sign .account-phone ,
+.form-sign .account-firstname,
+.form-sign .account-lastname,
+.form-sign .email{
+    width: 100%;
+    text-align: center;
+}
+.form-sign .account-name .input-name,
+.form-sign .account-password .input-password,
+.form-sign .account-confirmpassword .input-confirmpassword,
+.form-sign .account-phone .input-phone,
+.form-sign .account-firstname .input-name,
+.form-sign .account-lastname .input-name,
+.form-sign .email .input-name{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    direction: rtl;
+    outline: none;
+    padding: 0px 20px 0 0;
+    width: 83%;
+    margin-top: 20px;
+}
+.form-sign .account-name .input-name::placeholder,
+.form-sign .account-password .input-password::placeholder,
+.form-sign .account-confirmpassword .input-confirmpassword::placeholder,
+.form-sign .account-phone .input-phone::placeholder,
+.form-sign .account-firstname .input-name::placeholder,
+.form-sign .account-lastname .input-name::placeholder,
+.form-sign .email .input-name::placeholder{
+    color: #fff;
+}
+.form-sign .account-name i,
+.form-sign .account-password i,
+.form-sign .account-confirmpassword i,
+.form-sign .account-phone i,
+.form-sign .account-firstname i,
+.form-sign .account-lastname i,
+.form-sign .email i
+{
+    margin-left: -16px;
+    color: #fff;
+}
+input:-internal-autofill-selected
+{
+    background-color: transparent !important;
+
+}
+.form-sign .account-accept{
+    width: 100%;
+    text-align: end;
+    padding: 0 10px 0 0;
+    color: #fff;
+    direction: ltr;
+}
+.account-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px 30px 8px;
+    border-radius: 20px;
+    background: #fff;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    font-family: system-ui;
+}
+.other-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.other-sign .face{
+    display: flex;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.other-sign .face i{
+    color: rgb(1, 101, 225);
+    font-size: 15px;
+}
+.other-sign .google{
+    background: #fff;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.other-sign .google img{
+    width: 15px;
+    object-fit: cover;
+}
+.gender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 25px;
+    color: #fff;
+}
