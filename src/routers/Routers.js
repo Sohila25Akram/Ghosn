@@ -20,7 +20,6 @@ import SearchPeople from "../pages/SearchPeople"
 export function Routers(){
     return(
         <Routes>
-            <Route path='/home' element={<Home/>}  />
             <Route path='/' element={<Home/>}  />
             <Route path='/Ghosn' element={<Home/>}  />
             <Route path='/products' element={<Products/>}  />
