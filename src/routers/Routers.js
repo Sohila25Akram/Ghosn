@@ -1,21 +1,21 @@
 import { Routes, Route } from "react-router-dom"
-import Home from '../Pages/Home'
-import Products from '../Pages/Products'
-import Profile from '../Pages/Profile'
-import Article from '../Pages/Article'
-import { Details } from '../Pages/Details';
-import { Cart } from '../Pages/Cart';
+import Home from '../pages/Home'
+import Products from '../pages/Products'
+import Profile from '../pages/Profile'
+import Article from '../pages/Article'
+import { Details } from '../pages/Details';
+import { Cart } from '../pages/Cart';
 import { DashboardLayout } from "../Layout/DashboardLayout";
-import Articles from "../Pages/Articles"
-import { Community } from "../Pages/Community"
+import Articles from "../pages/Articles"
+import { Community } from "../pages/Community"
 import Login from "../Components/Login/Login"
 import Signup from "../Components/Signup/Signup"
-import RegistrationProcess from "../Pages/RegistrationProcess"
-import { Comments } from "../Pages/Comments"
-import { AddPost } from "./Pages/AddPost"
-import { UserProfile } from "../Pages/UserProfile"
+import RegistrationProcess from "../pages/RegistrationProcess"
+import { Comments } from "../pages/Comments"
+import { UserProfile } from "../pages/UserProfile"
 import Pots from "../Components/Pots/Pots"
-import SearchPeople from "../Pages/SearchPeople"
+import SearchPeople from "../pages/SearchPeople"
+import { AddPost } from "../pages/AddPost"
 
 export function Routers(){
     return(
