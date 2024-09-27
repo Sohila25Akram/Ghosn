@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom"
 import { SideNav } from "../Components/SideNav/SideNav";
-import { Customers } from "../pages/Customers";
-import { Transactions } from "../pages/Transactions";
-import { ProductsDash } from "../pages/ProductsDash";
-import { Dashboard } from "../pages/Dashboard";
-import { AddProduct } from "../pages/AddProduct";
-import { ArticlesDash } from "../pages/ArticlesDash";
-import { AddArticle } from "../pages/AddArticle";
+import { Customers } from "../Pages/Customers";
+import { Transactions } from "../Pages/Transactions";
+import { ProductsDash } from "../Pages/ProductsDash";
+import { Dashboard } from "../Pages/Dashboard";
+import { AddProduct } from "../Pages/AddProduct";
+import { ArticlesDash } from "../Pages/ArticlesDash";
+import { AddArticle } from "../Pages/AddArticle";
 import './dashboardLayout.css'
 import { useState } from "react";
 

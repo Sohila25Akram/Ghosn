@@ -1,21 +1,21 @@
 import { Routes, Route } from "react-router-dom"
-import Home from '../pages/Home'
-import Products from '../pages/Products'
-import Profile from '../pages/Profile'
-import Article from '../pages/Article'
-import { Details } from '../pages/Details';
-import { Cart } from '../pages/Cart';
+import Home from '../Pages/Home'
+import Products from '../Pages/Products'
+import Profile from '../Pages/Profile'
+import Article from '../Pages/Article'
+import { Details } from '../Pages/Details';
+import { Cart } from '../Pages/Cart';
 import { DashboardLayout } from "../Layout/DashboardLayout";
-import Articles from "../pages/Articles"
-import { Community } from "../pages/Community"
+import Articles from "../Pages/Articles"
+import { Community } from "../Pages/Community"
 import Login from "../Components/Login/Login"
 import Signup from "../Components/Signup/Signup"
-import RegistrationProcess from "../pages/RegistrationProcess"
-import { Comments } from "../pages/Comments"
-import { AddPost } from "../pages/AddPost"
-import { UserProfile } from "../pages/UserProfile"
+import RegistrationProcess from "../Pages/RegistrationProcess"
+import { Comments } from "../Pages/Comments"
+import { AddPost } from "./Pages/AddPost"
+import { UserProfile } from "../Pages/UserProfile"
 import Pots from "../Components/Pots/Pots"
-import SearchPeople from "../pages/SearchPeople"
+import SearchPeople from "../Pages/SearchPeople"
 
 export function Routers(){
     return(
